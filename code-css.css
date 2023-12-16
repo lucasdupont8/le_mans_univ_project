@@ -1,0 +1,165 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: serif, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 250%;
+}
+body{
+    position: absolute;
+    background-color: #000000;
+}
+/* taille de la police qui ce gÃ¨re*/
+/*https://www.ionos.fr/digitalguide/sites-internet/web-design/police-de-caracteres-adaptatives-et-commandes-css/*/
+.backtextTitre{
+    background-color: rgb(83, 101, 112);
+    color: #000000;
+    opacity: 0.8;
+    border-radius: 3vh;
+    padding: 1%;
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-shadow: 1px 1px 2px rgb(250, 2, 2),0 0 3px rgb(4, 2, 109);
+    /*decale de x,  y  floue de x pixel de couleur rouge /repÃ©tition argument prÃ©cÃ©dent */
+}
+.backtextSousTitre{
+    background-color: rgb(255,255,255);
+    opacity: 0.8;
+    border-radius: 3vh;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-bottom: 3%;
+}
+.backtext{
+    background-color: rgb(255,255,255);
+    opacity: 0.8;
+    border-radius: 3vh;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+
+}
+.imageBackHome {
+    background-image: url('https://cdn.futura-sciences.com/cdn-cgi/image/width=1920,quality=60,format=auto/sources/images/realite-virtuelle-VR.jpg');
+    background-repeat: no-repeat;  /*https://www.futura-sciences.com/tech/definitions/technologie-realite-virtuelle-598/*/
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.backMeta {
+    background-color: #14687d;
+    /*background-image: url('https://about.fb.com/fr/wp-content/uploads/sites/12/2023/06/01_Hero-View.jpg');
+    background-repeat: no-repeat;   /* vue eclate https://fs.npstatic.com/userfiles/1799474/file/Meta-Quest-3_Exploded-View-w782.jpeg*/
+    /*background-attachment: fixed;  
+    background-size: cover;*/
+}
+.imageBackApple {
+    background-image: url(./appleimage1.webp);
+    background-repeat: no-repeat;   /*image des puces du apple vision pro https://i0.wp.com/www.appletips.nl/wp-content/uploads/2023/06/Vision-Pro-m2-en-r1-chip.jpg?ssl=1*/
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.imageInArcticle{
+    margin-bottom: 2%;
+    max-width : 50em;
+    /*max-width : 600px;*/
+    height : auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+
+.topnav {
+    display: table;
+    /*position: -webkit -sticky;*/
+    position: fixed;
+    top:0;
+    background-color: black;
+    width: 100%;
+}
+.topnav a {
+        /*padding: 10%;*/
+        width: 33.3%;
+        color: white;
+        padding: 0.5rem 2rem;
+        text-decoration: none;/* enlÃ©ve le soulignement des lien*/
+        font-size: 140%;
+        text-align: center;
+        display: table-cell;
+}
+/* la casse que l'on survole m'est le background en blanc et la police en noir*/
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*  page ou on est reprÃ©sent la casse en verte */
+.topnav a.active {
+    background-color: #414345;
+    color: white;
+}
+.fondpact{
+    animation: fond 0.5s linear ;
+}
+
+@keyframes fond {
+    from {
+      opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+  /* @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) { */
+@media screen and (max-width: 65em){
+    .backtextTitre{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 52em){
+    .backtextTitre{
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width: 43em){
+    .backtextTitre{
+        margin-top: 23%;
+    }
+}
+@media screen and (orientation: portrait){
+    .backtextTitre{
+        margin-top: 13%;
+        font-size: 380%;
+    }
+    .backtextSousTitre{
+        font-size: 340%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 5%;
+    }
+    .backtext{
+        font-size: 300%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    .imageInArcticle{
+        margin-bottom: 5%;
+    }
+    .topnav a{
+        font-size: 230%;
+    }
+}
